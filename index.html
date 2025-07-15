@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f9;
+      background-color: #f2f4f6;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -15,50 +15,57 @@
     }
 
     .form-container {
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
       width: 100%;
-      max-width: 450px;
+      max-width: 480px;
     }
 
     h2 {
       text-align: center;
-      color: #333;
+      color: #1e1e2d;
+      margin-bottom: 1rem;
     }
 
     label {
       display: block;
       margin-top: 1rem;
       font-weight: 600;
-      color: #333;
+      color: #1e1e2d;
     }
 
     input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 10px 12px;
       margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
       font-size: 14px;
+      background-color: #fafbfc;
+    }
+
+    textarea {
+      resize: vertical;
     }
 
     button {
       margin-top: 1.5rem;
       width: 100%;
-      background-color: #3f76ff;
-      color: white;
+      background-color: #00b3a4; /* Hallo Theo primary teal */
+      color: #ffffff;
       padding: 12px;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
       transition: background-color 0.2s ease;
     }
 
     button:hover {
-      background-color: #2e5ed8;
+      background-color: #00998b;
     }
   </style>
 </head>
@@ -75,7 +82,7 @@
       <label for="message">Your question:</label>
       <textarea id="message" name="message" rows="4" placeholder="When does my lease renew?" required></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit">Send Inquiry</button>
     </form>
   </div>
 </body>
