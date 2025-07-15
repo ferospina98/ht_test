@@ -3,20 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>Hallo Theo – AI Chat Simulation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      background-color: #3f76ff;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #2e5ed8;
+    }
+  </style>
 </head>
 <body>
-  <h2>Submit a Customer Inquiry</h2>
-  <form action="https://YOUR-PRODUCTION-WEBHOOK.n8n.cloud" method="POST">
-    <label for="name">Your name:</label><br>
-    <input type="text" id="name" name="name" placeholder="Jane Doe"><br><br>
+  <div class="form-container">
+    <h2>Submit a Customer Inquiry</h2>
+    <form action="https://YOUR-PRODUCTION-WEBHOOK.n8n.cloud" method="POST">
+      <label for="name">Your name:</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe" required>
 
-    <label for="email">Your email:</label><br>
-    <input type="email" id="email" name="email" placeholder="jane@domain.com"><br><br>
+      <label for="email">Your email:</label>
+      <input type="email" id="email" name="email" placeholder="jane@domain.com" required>
 
-    <label for="message">Your question:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" placeholder="When does my lease renew?"></textarea><br><br>
+      <label for="message">Your question:</label>
+      <textarea id="message" name="message" rows="4" placeholder="When does my lease renew?" required></textarea>
 
-    <button type="submit">Send</button>
-  </form>
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </body>
 </html>
