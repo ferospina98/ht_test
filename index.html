@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hallo Theo – AI Chat Simulation</title>
+</head>
+<body>
+  <h2>Submit a Customer Inquiry</h2>
+  <form action="https://YOUR-PRODUCTION-WEBHOOK.n8n.cloud" method="POST">
+    <label for="name">Your name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Jane Doe"><br><br>
+
+    <label for="email">Your email:</label><br>
+    <input type="email" id="email" name="email" placeholder="jane@domain.com"><br><br>
+
+    <label for="message">Your question:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="When does my lease renew?"></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
